@@ -12,12 +12,19 @@
     if ($quoteData && isset($quoteData['content'], $quoteData['author'])) {
         $quoteContent = $quoteData['content'];
         $quoteAuthor = $quoteData['author'];
-        echo "<blockquote>
-                <p>{$quoteContent}</p>
-                <footer>- {$quoteAuthor}</footer>
-              </blockquote>";
+
+        // Fetch a random image from Unsplash
+        $unsplashApiUrl = 'https://source.unsplash.com/featured/?' . urlencode($quoteAuthor);
+
+        echo "<blockquote class=\"quote-block\">
+                    <p>{$quoteContent}</p>
+                    <footer>- {$quoteAuthor}</footer>
+                </blockquote>";
+
+        echo "<img src=\"{$unsplashApiUrl}\" alt=\"Related Image\" class=\"related-image\">";
+
     } else {
-        echo "<p>Unable to fetch the quote at the moment. Please try again later.</p>";
+        echo "<p>Unable to fetch the quote and image at the moment. Please try again later.</p>";
     }
     ?>
 
