@@ -14,8 +14,11 @@
     <nav>
         <ul>
             <li><a href="index.php">Home</a></li>
+
             <li><a href="chart.php">Chart</a></li>
             <li><a href="quote.php">Quote</a></li>
+            <li><a href="game.php">Game</a></li>
+
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
