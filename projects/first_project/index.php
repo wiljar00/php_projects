@@ -8,17 +8,20 @@
     
     <?php
     $listItems = array(
-        'page 1' => 'homepage',
-        'page 2' => 'about page',
-        'page 3' => 'contact page'
+        'page 1' => 'home.php',
+        'page 2' => 'chart.php',
+        'page 3' => 'quote.php',
+        'page 4' => 'game.php',
+        'page 5' => 'about.php',
+        'page 6' => 'about.php'
     );
     ?>
 
     <h3>Project Pages: </h3>
     <ul>
         <?php
-        foreach ($listItems as $page => $content) {
-            echo "<li>$page - $content</li>";
+        foreach ($listItems as $page => $url) {
+            echo "<li><a href='$url'>$page - $url</a></li>";
         }
         ?>
     </ul>
