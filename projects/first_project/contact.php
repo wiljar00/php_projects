@@ -1,14 +1,12 @@
 <?php include('header.php'); ?>
 
 <section>
-    <div>
-        <p>
-            Contact Page: reach out to me here on github: 
-            <a href='https://github.com/wiljar00'>
-                wiljar00
-            </a>
-        </p>
-    </div>
+    <h2>Contact Us</h2>
+
+    <h3>Feel free to reach out on github!</h3>
+    <a href='https://github.com/wiljar00'>
+        wiljar00
+    </a>
 </section>
 
 <?php include('footer.php'); ?>
