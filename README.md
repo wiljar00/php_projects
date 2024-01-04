@@ -3,4 +3,4 @@
 
 
 ## Remember!
-### You must install MAMP and set the project settings to run this directory. 
+You must install MAMP and set the project settings to run this directory. 
